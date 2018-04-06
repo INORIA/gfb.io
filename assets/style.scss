@@ -1,12 +1,4 @@
-html, body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-
-* {
-    box-sizing: border-box;
-}
+@import "./reset";
 
 $header-height: 70px;
 $footer-height: 200px;
@@ -30,8 +22,22 @@ $footer-height: 200px;
     height: calc(100% - #{$header-height} - #{$footer-height});
 }
 
+.name-item {
+    font-size: 2rem;
+    margin: 2rem;
+
+    @media (max-width: 640px) {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+}
+
 .logo {
     width: 300px;
+    
+    @media (max-width: 640px) {
+        width: 30%;
+    }
 }
 
 .footer {
